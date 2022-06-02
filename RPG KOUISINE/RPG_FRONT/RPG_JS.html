@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <title>RPG JS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type ="text/css" href="dialogue.css">
+    </head>
+    <body>
+        <canvas id = "game"></canvas>
+        <div id = "dialogue">
+            <div class="fight">
+                <div id="pText" onclick="choice()"></div>
+                <div id="pText3" onclick="choice3()"></div>
+            </div>
+            <div class="fight">
+                <div id="pText2" onclick="choice2()"></div>
+                <div id="pText4" onclick="choice4()"></div>
+            </div>
+        </div>
+        <div id= "perso">
+        <img id="profilimage" src="image/Sanji1.png"/>   
+        </div>
+        <div id="inventaire">
+            <div class="inventaire">
+                <img id ="pate" src="image/icons8-x-100.png" alt="pate" >
+            </div>
+            <div class="inventaire">
+                <img id ="fromage" src="image/icons8-x-100.png" alt="fromage">
+            </div>
+            <div class="inventaire">
+                <img id ="tomate" src="image/icons8-x-100.png" alt="tomate">                
+            </div>
+        </div> 
+
+        <script src="change_map.js"></script>
+        <script src="collisions.js"></script>
+        <script src="player.js"></script>
+
+    </body>
+    
+</html>

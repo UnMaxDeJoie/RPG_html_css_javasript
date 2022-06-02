@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'corp_de_texte';
+    src: url(./RPG_FRONT/police/Pixel\ Digivolve.otf) format('truetype');
+}
+
+body *{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Body + Grid Template */
+
+body{
+    background:#1F1F1F ;
+    color: #EBEBEB;
+    display: grid;
+    grid-template-columns: 1fr 850px 100px 1fr ;
+    grid-template-rows: 1fr 530px 100px 1fr;
+    grid-gap: 1em;
+    padding: 0;
+    margin: 0;
+}
+#screen{
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 5px;
+}
+
+#statutcombattant{
+    background-color: #EBEBEB;
+    height: 70px;
+    width: 350px;
+    position: relative;
+    top: -520px;
+    left: 20px
+}
+
+#statutennemy{
+    background-color: #EBEBEB;
+    height: 70px;
+    width: 350px;
+    position: relative;
+    top: -590px;
+    left: 480px
+}
+
+#dialogue{
+    grid-column: 2;
+    grid-row: 3;
+    background-color: #333333;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    border : 10px #333333 solid;
+}
+
+.fight{
+    width: 66.66%;
+    display: grid; 
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1em;
+}
+
+/* .fight{
+    background-color: #292929;
+    font-family: 'corp_de_texte';
+    font-size: X-large;
+    border: 0;
+    font-weight: bold;
+    color: white;
+} */
+
+#pText:hover{
+    background-color: #3f3f3f;
+}
+#pText2:hover{
+    background-color: #3f3f3f;
+}
+#pText3:hover{
+    background-color: #3f3f3f;
+}
+#pText4:hover{
+    background-color: #3f3f3f;
+}
+
+
+#description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    margin-left: 1em;
+    background-color: #292929;
+}
+
+#inventaire{
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #333333;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.inventaire{
+    height: 75px;
+    width: 75px;
+    background-color: #1F1F1F;display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#profilpicture{
+    grid-column: 3;
+    grid-row: 3;
+    background-color: #333333;
+    border-radius: 5px;
+}
+
+#play{
+    height: 100px;
+}
+
+#information{
+    font-size: large;
+    margin: 20px;
+}
+
+/* #dialogue{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #333333;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+#pText{
+    font-size: 1em;
+    font-family: 'corp_de_texte' ; 
+    text-align: center;
+    margin: 10px;
+}
+#pText2{
+    font-size: 1em;
+    font-family: 'corp_de_texte' ; 
+    text-align: center;
+    margin: 10px;
+}
+#pText3{
+    font-size: 1em;
+    font-family: 'corp_de_texte' ; 
+    text-align: center;
+    margin: 10px;
+}
+#pText4{
+    font-size: 1em;
+    font-family: 'corp_de_texte' ; 
+    text-align: center;
+    margin: 10px;
+}#pText5{
+    font-size: 2em;
+    font-family: 'corp_de_texte' ; 
+    text-align: center;
+    margin: 10px;
+}
+.fight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+}

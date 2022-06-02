@@ -1,0 +1,99 @@
+
+@font-face {
+    font-family: 'corp_de_texte';
+    src: url(police/Pixel\ Digivolve.otf) format('truetype');
+}
+
+body *{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Body + Grid Template */
+
+body{
+    background:#1F1F1F ;
+    color: #EBEBEB;
+    display: grid;
+    grid-template-columns: 1fr 1280px 100px 1fr ;
+    grid-template-rows: 1fr 720px 100px 1fr;
+    grid-gap: 2em;
+    padding: 0;
+    margin: 0;
+}
+#game{
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 5px;
+}
+#dialogue{
+    grid-column: 2;
+    grid-row: 3;
+    background-color: #333333;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#perso{
+    grid-column: 3;
+    grid-row: 3;
+    background-color: #333333;
+    border-radius: 5px;
+}
+#inventaire{
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #333333;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#pText{
+    font-size: 2em;
+    font-family: 'corp_de_texte' ; 
+    text-align: center;
+}
+#pText2{
+    font-size: 2em;
+    font-family: 'corp_de_texte' ; 
+    text-align: center;
+}
+#pText3{
+    font-size: 2em;
+    font-family: 'corp_de_texte' ; 
+    text-align: center;
+}
+#pText4{
+    font-size: 2em;
+    font-family: 'corp_de_texte' ; 
+    text-align: center;
+}
+img{
+    height: 75px;
+}
+#profilimage{
+    height: 100px;
+}
+.inventaire{
+    height: 75px;
+    width: 75px;
+    background-color: #1F1F1F;display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.fight{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}

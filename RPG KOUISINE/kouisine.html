@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type ="text/css" href="kouisine.css">
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <title>KOUISINE</title>
+</head>
+
+<body>
+    <div id="screen">
+        <canvas id="fightscreen"></canvas>
+        <div id="statutcombattant">
+        </div>
+        <div id="statutennemy">
+        </div>
+        <div id = "dialogue">
+            <div class="fight">
+                <div id="pText" onclick="attaque1()"></div>
+                <div id="pText3" onclick="attaque3()"></div>
+            </div>
+            <div class="fight">
+                <div id="pText2" onclick="attaque2()"></div>
+                <div id="pText4" onclick="attaque4()"></div>
+            </div class="fight">
+                <div id="pText5"></div>
+            </div>
+        </div>
+    <div id= "profilpicture">
+        <img id="play" src="image/Sanji1.png" onclick="changemusique()"/>
+        <!-- <div id="waveform">
+            <audio id="son" loop="loop" autoplay="autoplay">
+                <source src="HxHmusique.mp3"/>
+            </audio>
+        </div> -->
+    </div>
+
+    <audio id="son" loop="loop" autoplay="autoplay">
+        <source src="HxHmusique.mp3"/>
+    </audio>
+
+    <div id="inventaire">
+        <div class="inventaire">
+            <img id ="pate" src="image/icons8-x-100.png" alt="pate">
+        </div>
+        <div class="inventaire">
+            <img id ="fromage" src="image/icons8-x-100.png" alt="fromage">
+        </div>
+        <div class="inventaire">
+            <img id ="tomate" src="image/icons8-x-100.png" alt="tomate">                
+        </div>
+    </div>
+    <!-- <script>
+        var wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: 'violet',
+        progressColor: 'purple',
+        barwidth: 5
+        });
+
+        var stopbtn = getElementbyId("stop")
+
+        playbtn.onclick = function(){
+            wavesurfer.playPause();
+        }
+
+        wavesurfer.load('HxHmusique.mp3');
+    </script> -->
+    <script src="kouisine.js"></script>
+</body>
+</html>
